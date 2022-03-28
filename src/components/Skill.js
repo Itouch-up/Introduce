@@ -16,21 +16,34 @@ const Skill = () =>{
   `)
   return (
     
-    <div className="about-blurb" id="about">
+    <div className="skill-blurb" id="skill">
       <div className="container">
         <div className="inner-blurb">
           <div className="content">
-            <h3>Profile</h3>
-            <p>
-              <b>안녕하세요. 웹 프론트엔드 개발자의 길을 걷고 있는 학생입니다.</b><br/>
-              이름 : 박선우<br/>
-              소속 : 광주소프트웨어마이스터고등학교(2020~)<br/>
-              전공 : Web Front-End<br/>
-            </p>
-          </div>
-          <div className="images">
-            <div className="top-right">
-              <Img fluid={data.placeholderImage.childImageSharp.fluid}/>
+            <h3>Skill</h3><br/>
+            <div className="blocks">
+              <Link to="https://www.w3schools.com">
+              <div className="skills" id="html">
+                <div className="text">HTML5/CSS3/JavaScript(ES6)<br/><br/>What are they?</div> 
+              </div>
+              </Link>
+              <Link to="https://sass-lang.com/">
+              <div className="skills" id="scss">
+                <div className="text">SCSS<br/><br/>What is SCSS?</div> 
+              </div>
+              </Link>
+              </div>
+              <div className="blocks">
+              <Link to="https://ko.reactjs.org/">
+              <div className="skills" id="react">
+                <div className="text">React.js<br/><br/>What is React.js?</div>
+              </div>
+              </Link>
+              <Link to="https://www.gatsbyjs.com/">
+              <div className="skills" id="gatsby">
+                <div className="text">Gatsby.js<br/><br/>What is Gatsby.js?</div>
+              </div>
+              </Link>
             </div>
           </div>
         </div>

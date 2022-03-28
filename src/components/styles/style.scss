@@ -15,17 +15,22 @@ $marron:#83333e;
 $off-white:#f2f4f5;
 
 $base: 0.6rem;
+*{
+  text-decoration: none;
+  color: inherit;
+}
 html,
 body {
   font-family: $font;
   font-size: 16px;
   padding: 0;
   margin: 0;
+  
 }
 
 .container {
   width: 1640px;
-  min-width: 1640;
+  min-width: 1640px;
   margin: 0 auto;
 
   @media(max-width: 1440px) {
@@ -51,8 +56,8 @@ header {
   position: sticky;
   top: 0px;
   z-index: 10;
-  box-shadow: 1px 2px 6px #000 ;
-  background: $white ;
+  box-shadow: 1px 2px 6px #000;
+  background: $white;
 
   .inner-header {
     display: flex;
@@ -67,14 +72,19 @@ header {
         letter-spacing: 1.5px;
         color: $black;
       }
+
+      cursor: pointer;
     }
 
     .navigation {
       nav {
         display: flex;
-        div{
+
+        div {
           padding: 0 20px;
+          cursor: pointer;
         }
+
         a {
           margin: 0 20px;
           text-decoration: none;
@@ -97,7 +107,7 @@ header {
   align-items: center;
   background-color: $white;
   position: relative;
-  height: 100vh;
+  height: 95vh;
 
   .row {
     text-align: center;
@@ -119,7 +129,7 @@ header {
       z-index: 9;
 
       @media(max-width:1440px) {
-        font-size: 4.4rem;
+        font-size: 4.0rem;
         letter-spacing: 36px;
       }
     }
@@ -130,8 +140,9 @@ header {
       width: 200px;
     }
 
-    
+
   }
+
   .scroll {
     font-weight: 700;
     font-size: .875rem;
@@ -141,7 +152,8 @@ header {
     position: absolute;
     bottom: 48px;
   }
-  .fixed-misc{
+
+  .fixed-misc {
     position: fixed;
     top: 50%;
     right: -48px;
@@ -152,7 +164,8 @@ header {
     color: $white;
     mix-blend-mode: difference;
     z-index: 8;
-    @media(min-width: 1440px){
+
+    @media(min-width: 1440px) {
       right: -112px;
     }
   }
@@ -160,33 +173,40 @@ header {
 
 //about blurb
 
-.about-blurb{
+.about-blurb {
   padding: 48px 0;
   background: $white;
   position: relative;
-  .inner-blurb{
-    display: flex;justify-content: space-between;
+
+  .inner-blurb {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    .content{
+
+    .content {
       width: 33%;
-      @media(max-width:1440px){
+
+      @media(max-width:1440px) {
         width: 40%;
       }
-      .h3{
+
+      .h3 {
         font-weight: 700;
         text-transform: uppercase;
         font-size: 1.8em;
         letter-spacing: 1.5em;
         margin: 0;
       }
-      p{
+
+      p {
         font-size: 1rem;
         line-height: 2rem;
         font-weight: 300;
         margin: 40px 0 72px;
       }
-      .btn-row{
-        a{
+
+      .btn-row {
+        a {
           font-weight: 700;
           font-size: .875rem;
           letter-spacing: 1.5px;
@@ -196,15 +216,18 @@ header {
         }
       }
     }
-    .images{
+
+    .images {
       width: 50%;
       height: 1000px;
       position: relative;
       z-index: 7;
-      @media(max-width:1440px){
+
+      @media(max-width:1440px) {
         height: 360px;
       }
-      .top-right{
+
+      .top-right {
         position: absolute;
         width: 460px;
         top: 200px;
@@ -213,5 +236,183 @@ header {
       }
     }
   }
-  
+
+}
+
+//Skill
+.skill-blurb {
+  height: auto;
+  padding: 48px 0;
+  background: $white;
+  position: relative;
+
+  .inner-blurb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 90px;
+
+    .content {
+      width: 1640px;
+      min-width: 1640px;
+      margin: 0 auto;
+
+      @media(max-width: 1440px) {
+        width: 1280px;
+        min-width: 1280px;
+      }
+
+      @media(max-width: 1280px) {
+        width: 976px;
+        min-width: 976px;
+      }
+
+      @media(max-width: 976px) {
+        width: 768px;
+        min-width: 768px;
+      }
+      .blocks{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        color: inherit;
+        
+      }
+      .skills{
+        border: 1px solid $black;
+        border-radius: 10px;
+        height: 300px;
+        width: 250px;
+        text-align: center;
+        justify-content: center;
+        &:hover{
+          background-color: rgba(0,0,0,0.1);
+          cursor: pointer;
+        }
+        .text{
+        position: relative;
+        transform: translyateY(-50%);
+        top: 50%;
+        font-size: 0.9rem;
+        line-height: 2rem;
+        font-weight: 300;
+        }
+        #html{
+          position: relative;
+          top:30px;
+          left: 30px;
+        }
+        #scss{
+          position: relative;
+          top:30px;
+          left: 30px;
+        }
+        #react{
+          position: relative;
+          top:30px;
+          left: 30px;
+        }
+        #gatsby{
+          position: relative;
+          top:30px;
+          left: 30px;
+        }
+      }
+    }
+
+    .h3 {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 1.8em;
+      letter-spacing: 1.5em;
+      margin: 0;
+    }
+
+    p {
+      position: absolute;
+      width: 55%;
+      left: 45%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1rem;
+      line-height: 2rem;
+      font-weight: 300;
+    }
+
+    .btn-row {
+      a {
+        font-weight: 700;
+        font-size: .875rem;
+        letter-spacing: 1.5px;
+        color: $black;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+  }
+}
+//contact
+.contact {
+  height: 75vh;
+  padding: 48px 0;
+  background: $white;
+  position: relative;
+
+  .inner-blurb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .content {
+      display: flex;
+      width: 1640px;
+      min-width: 1640px;
+      margin: 0 auto;
+
+      @media(max-width: 1440px) {
+        width: 1280px;
+        min-width: 1280px;
+      }
+
+      @media(max-width: 1280px) {
+        width: 976px;
+        min-width: 976px;
+      }
+
+      @media(max-width: 976px) {
+        width: 768px;
+        min-width: 768px;
+      }
+    }
+
+    .h3 {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 1.8em;
+      letter-spacing: 1.5em;
+      margin: 0;
+    }
+
+    p {
+      position: absolute;
+      width: 55%;
+      left: 45%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1rem;
+      line-height: 2rem;
+      font-weight: 300;
+    }
+
+    .btn-row {
+      a {
+        font-weight: 700;
+        font-size: .875rem;
+        letter-spacing: 1.5px;
+        color: $black;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+  }
 }
