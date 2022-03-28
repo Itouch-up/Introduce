@@ -57,7 +57,7 @@ header {
   top: 0px;
   z-index: 10;
   box-shadow: 1px 2px 6px #000;
-  background: $white;
+  background: #B8FFF9;
 
   .inner-header {
     display: flex;
@@ -105,7 +105,7 @@ header {
 .banner {
   display: flex;
   align-items: center;
-  background-color: $white;
+  background-color: #e3f8f6dc;
   position: relative;
   height: 95vh;
 
@@ -175,7 +175,7 @@ header {
 
 .about-blurb {
   padding: 48px 0;
-  background: $white;
+  background: #e3f8f6dc;
   position: relative;
 
   .inner-blurb {
@@ -243,7 +243,7 @@ header {
 .skill-blurb {
   height: auto;
   padding: 48px 0;
-  background: $white;
+  background-color: #e3f8f6dc;
   position: relative;
 
   .inner-blurb {
@@ -276,17 +276,17 @@ header {
         justify-content: space-around;
         margin-bottom: 50px;
         color: inherit;
-        
       }
       .skills{
         border: 1px solid $black;
+        background-color: #85F4FF;
         border-radius: 10px;
         height: 300px;
         width: 250px;
         text-align: center;
         justify-content: center;
         &:hover{
-          background-color: rgba(0,0,0,0.1);
+          background-color: #42C2FF;
           cursor: pointer;
         }
         .text{
@@ -355,7 +355,7 @@ header {
 .contact {
   height: 75vh;
   padding: 48px 0;
-  background: $white;
+  background-color: #e3f8f6dc;
   position: relative;
 
   .inner-blurb {
