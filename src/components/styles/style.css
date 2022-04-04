@@ -132,6 +132,20 @@ header .inner-header .navigation nav a:last-child {
   z-index: 9;
 }
 
+.banner .row .main-text ::before {
+  content: "Typing Effect with CSS";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: black;
+  overflow: hidden;
+  border-right: 1px solid black;
+  -webkit-animation: typing 5s steps(31) infinite;
+          animation: typing 5s steps(31) infinite;
+}
+
 @media (max-width: 1440px) {
   .banner .row .main-text {
     font-size: 4.0rem;
@@ -172,6 +186,30 @@ header .inner-header .navigation nav a:last-child {
 @media (min-width: 1440px) {
   .banner .fixed-misc {
     right: -112px;
+  }
+}
+
+@-webkit-keyframes typing {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
   }
 }
 

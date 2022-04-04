@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 const AboutBlurb = () =>{
   const data = useStaticQuery(graphql`
   query {
-    placeholderImage: file(relativePath:{eq:"2260339.png"}){
+    placeholderImage: file(relativePath:{eq:"20200417_164329.png"}){
       childImageSharp{
         fluid(maxWidth:300){
           ...GatsbyImageSharpFluid
